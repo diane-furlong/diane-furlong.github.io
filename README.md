@@ -26,7 +26,6 @@ Download the code and open to view using your favorite browser.
 
 ## Credits
 
-Assignment (including original code) provided by CWRU Coding Bootcamp.
 
 
 ## Contributing
