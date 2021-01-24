@@ -1,69 +1,132 @@
 <!DOCTYPE html>
-
 <html lang="en-us">
 
 <head>
 
-    <title>Student Bio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta charset="UTF-8" />
+  <title>Diane Furlong's Portfolio</title>
 
-    <!--Link CSS below-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Boostrap Stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="./assets/style.css" media="screen">
+
+    <!-- Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Lobster+Two&family=Pacifico&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-
-    <!--Main Header-->
-    <h1>Student Bio</h1>
-
-    <!--This "container" class houses h2, the image, and the bio-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <a class="navbar-brand" href="index.html" id="logo">Diane Furlong</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">About</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+  <!-- End of navbar -->
 
-        <h2>Diane Furlong</h2>
-
-        <img class="photo" src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/123949888_10158934563427065_1371708955630118443_n.jpg?_nc_cat=103&ccb=2&_nc_sid=09cbfe&_nc_ohc=Dq8mv0NO6Z4AX_eM8PR&_nc_ht=scontent-ort2-1.xx&oh=bf242881d5c5ed6e75239af4157293e7&oe=5FDA71AC" alt="Photo of Me" width="200" height="200">
-
-        <div id="bio">
-            
-            <p>
-                Greetings! My name is Diane Furlong. I grew up in Euclid, Ohio and attended two different Catholic schools, St. Christine and St. Felicitas. I then moved to Eastlake, Ohio and attended North High School. 
-                After high school, I attended Cleveland State University. I started majoring in biology until I had a change of heart and switched my major to early childhood education. After a final switch back to science, I graduated with a Bachelor's of Science in Environmental Science. I focused in chemistry and completed a minor in biology. 
-                While in my last few years of university, I interned at the Northeast Ohio Regional Sewer District working in Analytical Services. I worked in the Bacti group where I tested water samples for harmful bacteria. This was very rewarding work because I had a part in helping keep the public safe from going into water (I tested mostly Lake Erie beaches) at times when the harmful bacteria levels were high. If you ever tried to go to Edgewater Beach, Villa Angela Beach, or Euclid Beach between the years of 2013 and 2015 but couldn't because of a sign that said you couldn't swim due to high bacteria levels, I'm most likely the one to blame!
-            </p>
-            <p>
-                After graduating, I started working as a microbiologist at STERIS. This company covers many aspects of sterilization, but I work in the Healthcare sector. I work to develop low-temperature sterilizers for medical devices and equipment. On a normal day, in short, I am inoculating medical devices with bacteria, processing it in one of our sterilizers, and then checking to make sure all of the bacteria is dead. I have been in this position for five years.
-            </p>
-            <p>
-                Further, I currently am a student in Case Western Reserve University's Coding Bootcamp. I am looking to build upon current skills and learn many new skills in working with different programs. I have some experience working with HTML and CSS, but I have much more to learn. I was probably about 12 years old when I started dabbling in coding. I made a few websites for fun with my self-learned knowledge of coding. I had considered going to college for a field in computer programming, but I was worried about having a career where I sat in front of a computer all day. When I found this opportunity recently to take this Coding Bootcamp course, I decided it was time to delve deeper into this interest. 
-                I feel that getting into this field opens new opportunities for my future and will allow more flexibility in my life.
-            </p>
-
+  <!-- Start of main container -->
+  <main class="container">
+    <section class="row">
+      <article class="block">
+        <div class="col-12">
+          <h1 class="block-header">About Me</h1>
+          <hr />
+          <img src="./assets/profile-picture.jpg" alt="Photo of Diane Furlong" id="about-image" />
         </div>
+        <p>
+          Greetings! My name is Diane Furlong. I grew up in Euclid, Ohio and then moved to Eastlake, Ohio and attended North High School. 
+          After high school, I attended Cleveland State University. I started majoring in biology until I had a change of heart and switched my major to early childhood education. After a final switch back to science, I graduated with a Bachelor's of Science in Environmental Science. I focused in chemistry and completed a minor in biology. 
+          While in my last few years of university, I interned at the Northeast Ohio Regional Sewer District working in Analytical Services. I worked in the Bacti group where I tested water samples for harmful bacteria. This was very rewarding work because I had a part in helping keep the public safe from going into water (I tested mostly Lake Erie beaches) at times when the harmful bacteria levels were high. If you ever tried to go to Edgewater Beach, Villa Angela Beach, or Euclid Beach between the years of 2013 and 2015 but couldn't because of a sign that said you couldn't swim due to high bacteria levels, I'm most likely the one to blame!
+        </p>
+        <br>
+        <p>
+          After graduating, I started working as a microbiologist at STERIS. This company covers many aspects of sterilization, but I work in the Healthcare sector. I work to develop low-temperature sterilizers for medical devices and equipment. On a normal day, in short, I am inoculating medical devices with bacteria, processing it in one of our sterilizers, and then checking to make sure all of the bacteria is dead. I have been in this position for five years.
+        </p>
+        <br>
+        <p>
+          Further, I currently am a student in Case Western Reserve University's Coding Bootcamp. I am looking to build upon current skills and learn many new skills in working with different programs. I have some experience working with HTML and CSS, but I have much more to learn. I was probably about 12 years old when I started dabbling in coding. I made a few websites for fun with my self-learned knowledge of coding. I had considered going to college for a field in computer programming, but I was worried about having a career where I sat in front of a computer all day. When I found this opportunity recently to take this Coding Bootcamp course, I decided it was time to delve deeper into this interest. 
+          I feel that getting into this field opens new opportunities for my future and will allow more flexibility in my life.
+        </p>
+      </article>
+    </section>
+  </main>
+  <!-- End of main container -->
 
+  <!--Start of connect with me section-->
+  <section class="container">
+    <div class="row">
+      <article class="block">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="connectheader">Connect With Me</h1>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="https://www.linkedin.com/in/diane-furlong/">
+              <img class="connectphoto" src="./assets/linkedin.png" alt="LinkedIn Logo">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://github.com/diane-furlong">
+              <img class="connectphoto" src="./assets/github.png" alt="GitHub Logo">
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="">
+              <img class="connectphoto" src="./assets/stackover2.png" alt="Stack Overflow Logo">
+            </a>
+          </div>
+        </div>
+      </article>
     </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <!--End of connect with me section-->
 
-    <!--This "contact" class houses the "Contact Info" section-->
-    <div class="contact">
+  <!-- Start of footer -->
+  <footer class="footer">
+    <div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright 2020 Diane Furlong
+    </p>
+  </footer>
+  <!-- End of footer -->
 
-        <h2>Contact Info</h2>
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <h3>
-            <ul>
-                <li>
-                    Email: <a href="mailto: dfurlongm@gmail.com">dfurlongm@gmail.com</a>
-                </li>
-                <li>
-                    Github: <a href="https://github.com/diane-furlong">diane-furlong</a>
-                </li>
-                <li>
-                    Portfolio: <a href="#placeholder">Coming soon!</a>
-                </li>
-            </ul>
-        </h3>
-
-    </div>
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 
