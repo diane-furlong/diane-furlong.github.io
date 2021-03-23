@@ -22,103 +22,170 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand" href="index.html" id="logo">Diane Furlong</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./resume.html">Resume</a>
-              </li>
-            </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-      </nav>
-      <!-- End of navbar -->
-
-  <!-- Start of container -->
-  <main class="container">
-    <section class="row">
-      <article class="block">
-        <div class="col-12">
-          <h1 class="block-header">Portfolio</h1>
-          <hr />
-        </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <p class="portcaption">Retail Website</p>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <p class="portcaption">About Me Website</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <a href="https://diane-furlong.github.io/RetailSite_SustainableStems/">
-              <img id="sustainableStems" class="img-fluid port-image" src="./assets/retail-page.png" alt="Screenshot of a retail page from my portfolio.">
-            </a>
-          </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <a href="./index.html">
-              <img id="responsivePortfolio" class="img-fluid port-image" src="./assets/Responsive-Portfolio-Image.png" alt="Screenshot of my about me page from my portfolio.">
-            </a>
+  <!-- Navbar-->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container nav-item"> <a class="navbar-brand" href="index.html" id="logo">Diane Furlong</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./resume.html">Resume</a>
+                </li>
+              </ul>
             </div>
         </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <p class="portcaption">Weather Dashboard</p>
+    </nav>
+  </header>
+
+  <!-- Start of container -->
+  <main class="blockPort">
+    <section>
+      <div>
+        <h1 class="block-header">Portfolio</h1>
+        <hr />
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">Retail Website</p>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <p class="portcaption">Treasure Trove</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <a href="https://diane-furlong.github.io/Weather-Dashboard/">
-              <img id="port-image-3" class="img-fluid port-image" src="./assets/demo2.gif" alt="Demo of weather dashboard.">
+          <div class="row">
+            <a href="https://diane-furlong.github.io/RetailSite_SustainableStems/">
+              <img class="img-fluid port-image" src="./assets/retail-page.png" alt="Screenshot of a retail page from my portfolio.">
             </a>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">About Me Website V.1</p>
+          </div>
+          <div class="row">
+            <a href="./index.html">
+              <img class="img-fluid port-image" src="./assets/Responsive-Portfolio-Image.png" alt="Screenshot of my about me page from my portfolio.">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">Weather Dashboard</p>
+          </div>
+          <div class="row">
+            <a href="https://diane-furlong.github.io/Weather-Dashboard/">
+              <img class="img-fluid port-image" src="./assets/demo2.gif" alt="Demo of weather dashboard.">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">Treasure Trove</p>
+          </div>
+          <div class="row">
             <a href="https://diane-furlong.github.io/Treasure-Trove/">
               <img id="port-image-3" class="img-fluid port-image" src="./assets/treasuredemo.gif" alt="Demo of Treasure Trove">
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
             <p class="portcaption">Workday Scheduler</p>
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-            <p class="portcaption">Random Password Generator</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
             <a href="https://diane-furlong.github.io/Work-Day-Scheduler/">
               <img id="port-image-3" class="img-fluid port-image" src="./assets/workdaydemo.gif" alt="Demo of Workday Scheduler.">
             </a>
-            </div>
-          <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">Random Password Generator</p>
+          </div>
+          <div class="row">
             <a href="https://diane-furlong.github.io/Password-Generator/">
               <img id="port-image-3" class="img-fluid port-image" src="./assets/passworddemo.gif" alt="Demo of Random Password Generator">
             </a>
-            </div>
+          </div>
         </div>
-      </article>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">Team Profile Generator</p>
+          </div>
+          <div class="row">
+            <img id="port-image-3" class="img-fluid port-image" src="./assets/teamprofilegenerator-demo.gif" alt="Demo of Team profile generator.">
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">README Generator</p>
+          </div>
+          <div class="row">
+            <img id="port-image-3" class="img-fluid port-image" src="./assets/readme-demo.gif" alt="Demo of Random READ ME Generator">
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">Employee Management System</p>
+          </div>
+          <div class="row">
+            <img id="port-image-3" class="img-fluid port-image" src="./assets/EMS_demo.gif" alt="Demo of Employee Management System.">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">Note Taker</p>
+          </div>
+          <div class="row">
+            <a href="https://theultimatenotetaker.herokuapp.com/">
+              <img id="port-image-3" class="img-fluid port-image" src="./assets/notepage_screenshot.png" alt="Screenshot of Note Taker App">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">Are We There Yet?</p>
+          </div>
+          <div class="row">
+            <a href="https://arewethereyet.herokuapp.com/">
+              <img id="port-image-3" class="img-fluid port-image" src="./assets/are-we-there-yet.png" alt="Screenshot of Are We There Yet.">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+          <div class="row">
+            <p class="portcaption">Eat Da Burger!</p>
+          </div>
+          <div class="row">
+            <a href="https://eatin-da-burg.herokuapp.com/">
+              <img id="port-image-3" class="img-fluid port-image" src="./assets/SS-burger.jpg" alt="Screenshot of Eat Da Burger">
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <!-- End of container -->
@@ -162,7 +229,7 @@
   <footer class="footer">
     <div class="two-toned-footer-color"></div>
     <p class="text-muted text-muted-footer text-center">
-      &copy; Copyright 2020 Diane Furlong
+      &copy; Copyright 2020-2021 Diane Furlong
     </p>
   </footer>
   <!-- End of footer -->
@@ -172,7 +239,7 @@
 
   <!-- Bootstrap CDN -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script></script>
-
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>

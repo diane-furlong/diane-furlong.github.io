@@ -22,75 +22,63 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <a class="navbar-brand" href="index.html" id="logo">Diane Furlong</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./resume.html">Resume</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!-- End of navbar -->
+  <!-- Navbar-->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container nav-item"> <a class="navbar-brand" href="index.html" id="logo">Diane Furlong</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./resume.html">Resume</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
 
   <!-- Start of main container -->
-  <main class="container">
-    <section class="row">
-      <article class="block">
-        <div class="col-12">
-          <h1 class="block-header">About Me</h1>
-          <hr />
-          <img src="./assets/profile-picture.jpg" alt="Photo of Diane Furlong" id="about-image" />
+  <div class="row introDiv">      
+    <div class="col-1"></div>
+    <img src="./assets/profile-picture.jpg" class="col-3" alt="Photo of Diane Furlong" id="about-image">
+    <div class="col-6">
+      <div class="hiIntro">
+        <div class="onLoad">
+          <h1 class="hi">Hi,</h1>
+          <h2 class="intro">I'm Diane.</h2>
         </div>
-        <p>
-          Greetings! My name is Diane Furlong. I am in training to become a full stack web developer. This is a webpage to showcase my portfolio and to give my contact information, along with links to additional links to sites, such as my GitHub page.
-        </p>
-        <br>
-        <p> 
-          Here's a little information about my background:
-        </p>
-        <br>
-        <p>
-          I grew up in the suburbs of Cleveland and have lived in the area my whole life.
-          I attended Cleveland State University and graduated with a Bachelor's of Science in Environmental Science. I focused in chemistry and completed a minor in biology.
-        </p>
-        <br>
-        <p> 
-          While in my last few years of university, I interned at the Northeast Ohio Regional Sewer District working in Analytical Services. I worked in the Bacti group where I tested water samples for harmful bacteria. This was very rewarding work because I had a part in helping keep the public safe from going into water (I tested mostly Lake Erie beaches) at times when the harmful bacteria levels were high. If you ever tried to go to Edgewater Beach, Villa Angela Beach, or Euclid Beach between the years of 2013 and 2015 but couldn't because of a sign that said you couldn't swim due to high bacteria levels, I'm most likely the one to blame!
-        </p>
-        <br>
-        <p>
-          After graduating, I started working as a microbiologist at STERIS. This company covers many aspects of sterilization, but I work in the Healthcare sector. I work to develop low-temperature sterilizers for medical devices and equipment. On a normal day, in short, I am inoculating medical devices with bacteria, processing it in one of our sterilizers, and then checking to make sure all of the bacteria is dead. I have been in this position for a little over five years.
-        </p>
-        <br>
-        <p>
-          Further, I currently am a student in Case Western Reserve University's Coding Bootcamp. I am looking to build upon current skills and learn many new skills in working with different programs. I have some experience working with HTML and CSS, but I have much more to learn. I was probably about 12 years old when I started dabbling in coding. I made a few websites for fun with my self-learned knowledge of coding. I had considered going to college for a field in computer programming, but I was worried about having a career where I sat in front of a computer all day. When I found this opportunity recently to take this Coding Bootcamp course, I decided it was time to delve deeper into this interest. 
-          I feel that getting into this field opens new opportunities for my future and will allow more flexibility in my life.
-        </p>
-      </article>
-    </section>
-  </main>
+        <div class="aboutMe">
+          <p>
+            I'm in training to become a full stack web developer. I am building upon current skills and learning many new skills. I taught myself basic HTML and CSS at an early age, but never took the steps to further explore this interest- until now! Thus far, I've made applications working on both the front end and the back end. View my portfolio page to see some examples!
+          </p>
+          <p> 
+            Here's a little information about my background:
+          </p>
+          <p>
+            I grew up in the suburbs of Cleveland and have lived in the area my whole life.
+            I attended Cleveland State University and graduated with a Bachelor's of Science in Environmental Science. I focused in chemistry and completed a minor in biology.
+          </p>
+          <p> 
+            While in my last few years of university, I interned at the Northeast Ohio Regional Sewer District working in Analytical Services. After graduating, I started working as a microbiologist at STERIS in the Healthcare sector. I work to develop low-temperature sterilizers for medical devices and equipment.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
   <!-- End of main container -->
 
+<br><br><br><br><br><br><br><br>
   <!--Start of connect with me section-->
-  <section class="container">
+  <section class="container connectWMe">
     <div class="row">
       <article class="block">
         <div class="row">
@@ -128,7 +116,7 @@
   <footer class="footer">
     <div class="two-toned-footer-color"></div>
     <p class="text-muted text-muted-footer text-center">
-      &copy; Copyright 2020 Diane Furlong
+      &copy; Copyright 2020-2021 Diane Furlong
     </p>
   </footer>
   <!-- End of footer -->
@@ -138,6 +126,8 @@
 
   <!-- Bootstrap CDN -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script src="./assets/script.js"></script>
 
 </body>
 

@@ -19,18 +19,19 @@ body {
     min-height: 100%;
   }
   
-  /* add space for fixed nav */
-  main {
-    margin: 80px 0;
-  }
-  
   /* create styles for use in all white main boxes */
   .block {
     background-color: #fff;
     padding: 30px;
-    width: 75%;
-    margin: auto;
+    width: 90%;
+    margin-top: 20%
   }
+  /* Change block styling on small viewports */
+  @media (max-width: 991.98px) {
+    .block {
+      margin-top: 30%;
+    }
+  } 
   
   .block-header {
     /* Typography */
@@ -44,6 +45,10 @@ body {
       .block {
         margin: 2%;
       }
+
+      .introDiv {
+        margin-top: 30%;
+      }
     }
   
   /* NAV START */
@@ -54,26 +59,8 @@ body {
     /* Typography */
     font-size: 30px;
     color: #4aaaa5;
-  
-    /* Visual */
-    background: #f8f9fa;
   }
 
-  #logo:hover {
-    background-image: url('./Background.jpg');
-  }
-
-  
-  /* override bootstrap hover color and border */
-  .navbar-default .navbar-nav > li > a:hover {
-    color: #4aaaa5;
-  }
-  
-  .navbar {
-    background: white;
-    border: none;
-  }
-  
   /* media query for nav*/
   @media only screen and (max-width: 767px) {
     .navbar-header {
@@ -81,10 +68,81 @@ body {
     }
   }
   /* END NAV */
+
+  /* NEW NAV*/
+  /*----WHOLE APP----*/
+  .navbar {
+    transition: all 0.4s;
+  }
+
+  .navbar .nav-link {
+    color: lightslategray;
+    font-size: 22px;
+  }
+
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
+    color: black;
+    text-decoration: none;
+  }
+
+  .navbar .navbar-brand {
+    color: #f8f9fa;
+    font-size: 24px;
+  }
+
+
+
+  /* Change navbar styling on scroll */
+  .navbar.active {
+    background: #f8f9fa;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar.active .nav-link:hover,
+  .navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+  }
+
+  .navbar.active .navbar-brand, .navbar-brand:hover {
+    color: #555;
+  }
+
+  .navbar.active #logo:hover {
+    background-image: url('./Background.jpg');
+  }
+
+  .navbar-toggler {
+    color:black;
+  }
+
+  .navbar-toggler-right {
+    background-color:black;
+  }
+
+  /* Change navbar styling on small viewports */
+  @media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+  } 
+
   
   
   /* CONNECT W/ ME CSS */
-    /* Typography */
+
+  .connectWMe {
+    margin-bottom: 2%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .connectheader {
     font-family: 'Lobster Two', cursive;
     font-size: 28px;
@@ -105,6 +163,8 @@ body {
     border-width: 2px;
     border-color: #4aaaa5;
   }
+
+ 
 
   /* END CONNECT W/ ME */
   
@@ -143,6 +203,56 @@ body {
   /* --- END STYLES FOR ALL PAGES --- */
   
   /* --- PAGE-SPECIFIC STYLES --- */
+
+  /* --- INTRO PAGE --- */
+
+  .introDiv {
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+  }
+
+  /* Change introDiv styling on small viewports */
+  @media (max-width: 991.98px) {
+    .introDiv  {
+      margin-top: 18%;
+    }
+  } 
+
+  .hi {
+    font-size: 200px;
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    color: #4aaaa5;
+    display: none;
+  }
+
+  .intro {
+    font-size: 60px;
+    font-family: 'Amaranth', sans-serif;
+    text-align: center;
+    color: #4aaaa5;
+    display: none;
+  }
+
+  .hiIntro {
+    height: 100%;
+  }
+
+  .hiIntro:hover .onLoad {
+    display: none;
+  }
+
+  .aboutMe {
+    display: none;
+    font-size: 22px;
+  }
+
+  .hiIntro:hover .aboutMe {
+    display: block;
+  }
+
   /* ABOUT-ME PAGE */
 
   .about-me-header {
@@ -157,44 +267,42 @@ body {
   }
   
   #about-image {
-    /* Positioning */
-    float: left;
-  
-    /* Box-model */
-    width: 200px;
-    margin: 0 20px 10px 0;
+    width: 100%;
+    margin-left: 10%;
+    border-radius: 30%;
   }
 
   /* END ABOUT-ME PAGE */
   
   
   /* PORTFOLIO PAGE */
-  #sustainableStems {
-    display: block;
-    margin: auto;
-    border: 2px solid black;
-    width: 90%;
-    height: 90%;
-  }
 
-  #responsivePortfolio {
-    display: block;
-    margin: auto;
-    border: 2px solid black;
-    width: 90%;
+  .blockPort {
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: white;
+    padding: 30px;
   }
+  /* Change blockport styling on small viewports */
+  @media (max-width: 991.98px) {
+    .blockPort {
+      margin-top: 14%;
+    }
+  } 
 
-  #port-image-3 {
+  .port-image {
     display: block;
-    margin: auto;
     border: 2px solid black;
-    width: 90%;
-    height: 97%;
+    width: 94%;
+    /* height: 90%; */
+    margin: 2%;
   }
 
   .portcaption {
-    text-align: center;
-    margin-top: 5%;
+    width: 94%;
+    margin: 2%
   }
 
   .port-image-description {
@@ -212,11 +320,6 @@ body {
     /* keep from horizontally resizing text area */
     min-width: 100%;
     max-width: 100%;
-  }
-
-  #directDiv {
-    background-color: white;
-    padding: 5%;
   }
   
   .submit-btn {
